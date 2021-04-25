@@ -7,8 +7,6 @@ mod os;
 //   " '-. ._ ,_.-='  "
 //   "  `). ( `);(    "
 //   "  ('. .)(,'.)   "
-//   "   ) ( ,').(    "
-//   "  ( .').'(').   "
 //   "   .) (' ).('   "
 //   "  '  ) (  ).    "
 //   "   .'( .)'      "
@@ -16,14 +14,12 @@ mod os;
 
 fn main() {
   println!("  .-;':':'-.    ");
-  print!(" {{'.'.'.'.'.}}   \t{}@{}", whoami::get_username(), whoami::get_hostname());
+  println!(" {{'.'.'.'.'.}}   {}@{}", whoami::get_username(), whoami::get_hostname());
   let br = "-".repeat(whoami::get_username().len() + whoami::get_hostname().len() + 1);
-  println!("  )        '`.  \t{}", br);
-  println!(" '-. ._ ,_.-='  \tos\t{}", os::get_os());
-  println!("  `). ( `);(    ");
-  println!("  ('. .)(,'.)   ");
-  println!("   ) ( ,').(    ");
-  println!("  ( .').'(').   ");
+  println!("  )        '`.  {}", br);
+  println!(" '-. ._ ,_.-='  os\t{}", os::get_os());
+  println!("  `). ( `);(    kernel\t{}", os::get_kernel());
+  println!("  ('. .)(,'.)   shell\t{}", os::get_shell());
   println!("   .) (' ).('   ");
   println!("  '  ) (  ).    ");
   println!("   .'( .)'      ");

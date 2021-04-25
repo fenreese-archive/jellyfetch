@@ -4,10 +4,9 @@ my personal simple fetch tool in rust. inspired by [bunnyfetch](https://github.c
 TODO:
  - ~~username@hostname~~
  - ~~os~~
- - kernel
- - shell
- - wm/de
- - resolution
+ - ~~kernel~~
+ - ~~shell~~
  - cpu
  - ram
+ - uptime
 
