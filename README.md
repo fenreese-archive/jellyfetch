@@ -6,7 +6,7 @@ TODO:
  - ~~os~~
  - ~~kernel~~
  - ~~shell~~
- - cpu
- - ram
+ - ~~cpu~~
+ - ~~ram~~
  - uptime
 
