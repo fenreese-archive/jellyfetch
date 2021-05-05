@@ -9,6 +9,7 @@ pub fn get_uptime() -> String {
   let mut uptime_info = String::new();
   buf_reader.read_to_string(&mut uptime_info).unwrap();
 
+  // cursed double unwrap because i'm THAT sure of myself
   let uptime = uptime_info
     .split_whitespace()
     .nth(0)
