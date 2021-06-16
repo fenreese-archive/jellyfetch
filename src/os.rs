@@ -44,7 +44,7 @@ pub fn get_shell() -> String {
   // TODO: check for /bin/___ or plain ol' ___
   let shell_string = shell
     .split("/")
-    .nth(3)
+    .last()
     .unwrap()
     .to_string();
 

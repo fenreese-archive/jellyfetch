@@ -26,7 +26,7 @@ fn render(info: &[String]) {
 }
 
 fn main() {
-  let user_info = format!("{}{}{}", whoami::get_username().purple(), "@", whoami::get_hostname().purple());
+  let user_info = format!("{}{}{}", whoami::get_username().purple().bold(), "@", whoami::get_hostname().purple().bold());
   let os_info = format!("{}  {}", "os".red(), os::get_os());
   let kernel_info = format!("{}  {}", "kernel".yellow(), os::get_kernel());
   let shell_info = format!("{}  {}", "shell".green(), os::get_shell());
