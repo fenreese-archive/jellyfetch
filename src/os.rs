@@ -40,8 +40,6 @@ pub fn get_kernel() -> String {
 pub fn get_shell() -> String {
   let shell = var("SHELL").unwrap_or("Unknown".to_string());
 
-  // will only work if $SHELL is /usr/bin/___
-  // TODO: check for /bin/___ or plain ol' ___
   let shell_string = shell
     .split("/")
     .last()
